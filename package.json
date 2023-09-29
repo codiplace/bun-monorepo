@@ -1,0 +1,18 @@
+{
+	"name": "bun-monorepo",
+	"version": "0.0.1",
+	"description": "Elysia Backend + React Native + Next.js",
+	"workspaces": ["apps/*", "packages/*"],
+	"scripts": {
+		"dev": "concurrently \"cd apps/backend && bun dev\" \"cd apps/mobile && bun ios\" \"cd apps/web && bun --bun run dev\"",
+		"typecheck": "bunx --bun tsc",
+		"lint": "biome lint .",
+		"lint:fix": "biome lint --apply .",
+		"format": "biome format .",
+		"format:fix": "biome format --write ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.2.2",
+		"concurrently": "^6.2.0"
+	}
+}
