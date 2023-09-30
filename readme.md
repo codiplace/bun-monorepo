@@ -18,7 +18,7 @@ This monorepo includes the following packages/apps:
 This monorepo has some additional tools already setup for you:
 
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [Biome.js](https://biomejs.dev/) for code formatting and linting
+- [Biome.js](https://biomejs.dev/) for code formatting and linting. It is recommended to install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=biomejs.biome)
 
 ### Getting Started
 
@@ -44,3 +44,4 @@ bun format
 bun lint
 
 ```
+
